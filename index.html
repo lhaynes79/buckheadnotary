@@ -1220,9 +1220,11 @@
           </div>
         </div>
       </div>
-      <form class="contact-form" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="booking">
-        <p style="display:none"><label>Leave this empty <input name="bot-field"></label></p>
+      <form class="contact-form" name="booking" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="485de88a-4aec-457b-a580-12961dfdf122">
+        <input type="hidden" name="subject" value="New booking request - Buckhead Notary website">
+        <input type="hidden" name="from_name" value="Buckhead Notary Website">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
         <h3>Request an Appointment</h3>
         <div class="form-row">
           <div class="form-group">
